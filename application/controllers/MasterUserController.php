@@ -96,8 +96,9 @@ class MasterUserController extends CI_Controller
   }
 
   // update user by id
-  public function update($id)
+  public function update()
   {
+    $id = $this->input->post('ID');
     $EMAIL = $this->input->post('EMAIL');
     $PASSWORD = $this->input->post('PASSWORD');
     $FULL_NAME = $this->input->post('FULL_NAME');
